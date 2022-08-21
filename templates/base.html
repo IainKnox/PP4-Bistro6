@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap-min.css') }}">
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+
+    <!-- Venddor CSS Files-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/aos/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+
+    <!-- Template Main CSS Files-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' )}}">
     <title>Bistro6</title>
 </head>
@@ -18,20 +31,14 @@
         <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
       </div>
 
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Bistro 6</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -75,8 +82,8 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
-          <h1>Welcome to <span>Restaurantly</span></h1>
-          <h2>Delivering great food for more than 18 years!</h2>
+          <h1>Welcome to <span>Bistro 6</span></h1>
+          <h2>An out of the box approach to fine dining!</h2>
 
           <div class="btns">
             <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
@@ -100,7 +107,7 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="assets/img/about.jpg" alt="">
+              <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="">
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -188,7 +195,7 @@
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/lobster-bisque.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Lobster Bisque</a><span>$5.95</span>
             </div>
@@ -198,7 +205,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/bread-barrel.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Bread Barrel</a><span>$6.95</span>
             </div>
@@ -208,7 +215,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/cake.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Crab Cake</a><span>$7.95</span>
             </div>
@@ -218,7 +225,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/caesar.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Caesar Selections</a><span>$8.95</span>
             </div>
@@ -228,7 +235,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/tuscan-grilled.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Tuscan Grilled</a><span>$9.95</span>
             </div>
@@ -238,7 +245,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/mozzarella.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Mozzarella Stick</a><span>$4.95</span>
             </div>
@@ -248,7 +255,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/greek-salad.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Greek Salad</a><span>$9.95</span>
             </div>
@@ -258,7 +265,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/spinach-salad.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Spinach Salad</a><span>$9.95</span>
             </div>
@@ -268,7 +275,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="{{ url_for('static', filename='img/menu/lobster-roll.jpg') }}" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Lobster Roll</a><span>$12.95</span>
             </div>
@@ -321,7 +328,7 @@
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/specials-1.png') }}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -333,7 +340,7 @@
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/specials-2.png') }}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -345,7 +352,7 @@
                     <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/specials-3.png') }}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -357,7 +364,7 @@
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/specials-4.png') }}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -369,7 +376,7 @@
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/specials-5.png') }}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -395,7 +402,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  <img src="{{ url_for('static', filename='img/event-birthday.jpg') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Birthday Parties</h3>
@@ -422,7 +429,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  <img src="{{ url_for('static', filename='img/event-private.jpg') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Private Parties</h3>
@@ -449,7 +456,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  <img src="{{ url_for('static', filename='img/event-custom.jpg') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Custom Parties</h3>
@@ -550,7 +557,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -563,7 +570,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -576,7 +583,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -589,7 +596,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -602,7 +609,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -631,64 +638,64 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-1.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-2.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-2.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-3.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-3.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-4.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-4.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-5.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-5.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-6.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-6.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-7.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-7.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-8.jpg') }}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-8.jpg') }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -711,7 +718,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='img/chefs/chefs-1.jpg') }}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Walter White</h4>
@@ -729,7 +736,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='img/chefs/chefs-2.jpg') }}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Sarah Jhonson</h4>
@@ -747,7 +754,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='img/chefs/chefs-3.jpg') }}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>William Anderson</h4>
@@ -806,7 +813,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>info@bistro-six.com</p>
               </div>
 
               <div class="phone">
@@ -859,14 +866,14 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Restaurantly</h3>
+              <h3>Bistro 6</h3>
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
                 <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Email:</strong> info@bistro-six.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -878,7 +885,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -889,18 +896,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="col-lg-5 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
@@ -915,14 +911,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong><span>Bistro 6</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
