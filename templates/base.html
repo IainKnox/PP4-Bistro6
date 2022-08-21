@@ -48,9 +48,8 @@
           <li><a class="nav-link scrollto active" href="{{ url_for('index') }}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('about') }}">About</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('menu') }}">Menu</a></li>
-          <li><a class="nav-link scrollto" href="{{ url_for('book') }}">Events</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('book') }}">Bookings & Events</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('index') }}">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,12 +62,13 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
         <h1>Welcome to <span>Bistro 6</span></h1>
         <h2>An out of the box approach to fine dining!</h2>
 
         <div class="btns">
             <a href="{{ url_for('menu') }}" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+            <a href="{{ url_for('about') }}" class="btn-menu animated fadeInUp scrollto">About Us</a>
             <a href="{{ url_for('book') }}" class="btn-book animated fadeInUp scrollto">Book a Table</a>
         </div>
         </div>
